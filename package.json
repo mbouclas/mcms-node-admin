@@ -1,0 +1,35 @@
+{
+  "name": "mcms-node-admin",
+  "description": "mcms node admin module.",
+  "version": "0.0.8",
+  "keywords": [
+    "mcms",
+    "framework",
+    "cms",
+    "admin"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Michael Bouclas",
+    "email": "mbouclas@gmail.com",
+    "url": "http://www.net-tomorrow.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbouclas/mcms-node-admin"
+  },
+  "bugs": {
+    "url": "https://github.com/mbouclas/mcms-node-admin/issues"
+  },
+  "dependencies": {
+    "MD5": "^1.2.1",
+    "async": "~0.9.0",
+    "fs-extra": "~0.12.0",
+    "lodash": "^2.4.1",
+    "mcms-node-config-loader": "0.0.3",
+    "minimist": "^1.1.0",
+    "mongoose-materialized": "~0.1.8",
+    "rootpath": "^0.1.2",
+    "wrench": "^1.5.8"
+  }
+}

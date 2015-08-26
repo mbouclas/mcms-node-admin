@@ -1,0 +1,48 @@
+{
+  "name" : "mcms-node-admin",
+  "package" : "mcms-node-admin",
+  "baseFolder" : "packages/mcms-node-admin",
+  "modules" : [
+    "shared.components",
+    "mcms-admininstrator",
+    "mcms-node-admin"
+  ],
+  "devFiles" : {
+    "js" : [
+    ],
+    "css" : []
+  },
+  "files" : {
+    "js" : [
+    ],
+    "css" : []
+  },
+  "menus" : [
+    {
+      "title" : "Administrator",
+      "href" : "",
+      "items" : [
+        {
+          "title" : "Settings",
+          "href" : "admin/settings"
+        },
+        {
+          "title" : "Users",
+          "href" : "admin/users"
+        },
+        {
+          "title" : "Menus",
+          "href" : "admin/menus"
+        },
+        {
+          "title" : "Translations",
+          "href" : "admin/translations"
+        },
+        {
+          "title" : "Settings manager",
+          "href" : "admin/settingsManager"
+        }
+      ]
+    }
+  ]
+}
