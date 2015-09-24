@@ -6,6 +6,7 @@ module.exports = (function(App,Express,Package){
     Route.set(names);
     Express.use('/admin',App.Auth.middleware.applyCSRF,require('./routes/login')(App,Route));
     Express.use('/admin',[App.Auth.middleware.applyCSRF,App.Auth.middleware.isAdmin,Package.adminUiLoader.middleware],require('./routes/index')(App,Route));
+    Express.use('/admin/api/settings',App.Auth.middleware.applyCSRF,[App.Auth.middleware.isAdmin],require('./routes/settings')(App,Route,Package));
     Express.use(Route.use);
 
 });

@@ -13,12 +13,17 @@ module.exports = (function(App){
     function admin(){
         this.App = miniApp;
         this.packageName = 'admin';
+        this.services = {};
+        this.controllers = {};
         if (typeof App.Config[this.packageName] == 'undefined'){ //config not published yet
             this.Config = configLoader.loadConfig(path.join(__dirname,'Config'));
             App.Config = lo.merge(this.Config,App.Config);
         } else {
             this.Config = App.Config[this.packageName];//Config published
         }
+
+        this.services = App.Helpers.services.loadService(__dirname + '/Services',null,this);
+        App.Services[this.packageName] = this.services;
 
         if (App.CLI){
             var commandFolder = __dirname + '/bin/Command/';
@@ -40,6 +45,7 @@ module.exports = (function(App){
         App.Lang.add({
             directory : __dirname + '/Lang'
         });
+        App.Controllers[this.packageName] = App.Helpers.services.loadService(__dirname + '/Controllers',true,this);
 
         miniApp.on('mount', function (parent) {
             console.log('Admin Mounted');//parent is the main app
