@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mbouclas/mcms-node-admin"
+    "url": "git+https://github.com/mbouclas/mcms-node-admin.git"
   },
   "bugs": {
     "url": "https://github.com/mbouclas/mcms-node-admin/issues"
@@ -31,5 +31,29 @@
     "mongoose-materialized": "~0.1.8",
     "rootpath": "^0.1.2",
     "wrench": "^1.5.8"
-  }
+  },
+  "gitHead": "fc980a61917e15e174e5ea7dfc86040f5d7746fa",
+  "homepage": "https://github.com/mbouclas/mcms-node-admin#readme",
+  "_id": "mcms-node-admin@0.0.10",
+  "scripts": {},
+  "_shasum": "e7ff77a10901cdd11e34c7e6d31677c056e14fef",
+  "_from": "mcms-node-admin@*",
+  "_npmVersion": "2.11.3",
+  "_nodeVersion": "0.12.7",
+  "_npmUser": {
+    "name": "mbouclas",
+    "email": "mbouclas@gmail.com"
+  },
+  "dist": {
+    "shasum": "e7ff77a10901cdd11e34c7e6d31677c056e14fef",
+    "tarball": "http://registry.npmjs.org/mcms-node-admin/-/mcms-node-admin-0.0.10.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "mbouclas",
+      "email": "mbouclas@gmail.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/mcms-node-admin/-/mcms-node-admin-0.0.10.tgz"
 }
