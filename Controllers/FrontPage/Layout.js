@@ -16,7 +16,9 @@ module.exports = (function(App,Package) {
     }
 
     function update(req,res,next){
-
+        //write file?
+        FrontPageService.update(req.body.data);
+        res.send({success : true});
     }
 
     function uploadImageForFrontPage(req,res,next){
