@@ -12,9 +12,9 @@ module.exports = (function(App,Package) {
 
     function uploadFrontPageImage(req,res,next){
         var file = req.files.uploadedFile;
-        var StorageDir = path.join(App.Config.baseDir,App.Config.view.frontPageImagesDir);
+        var StorageDir = path.join(App.Config.baseDir,App.Config.image.frontPage.dir);
         fs.move(file.path,StorageDir + file.originalname,{clobber : true},function(err,result){
-            file.url = App.Config.view.frontPageImagesUrl + file.originalname;
+            file.url = App.Config.image.frontPage.url + file.originalname;
             res.send(file);
         });
     }
